@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter&display=swap');
+
+* {
+   box-sizing: border-box;
+   font-family: 'Bitter', sans-serif;
+}
+
+body {
+   background-image: url(../media/background.png);
+}
+
+.decor {
+   position: relative;
+   width: 40%;
+   margin: 15% 30%;
+   background: white;
+   border-radius: 30px;
+}
+
+.form-left-decoration, .form-right-decoration {
+   content: "";
+   position: absolute;
+   width: 50px;
+   height: 20px;
+   background: #6b4557;
+   border-radius: 20px;
+}
+
+.form-left-decoration {
+   bottom: 60px;
+   left: -30px;
+}
+
+.form-right-decoration {
+   top: 60px;
+   right: -30px;
+}
+
+.form-left-decoration:before, .form-left-decoration:after, .form-right-decoration:before, .form-right-decoration:after {
+   content: "";
+   position: absolute;
+   width: 50px;
+   height: 20px;
+   border-radius: 30px;
+   background: white;
+}
+
+.form-left-decoration:before {
+   top: -20px;
+}
+
+.form-left-decoration:after {
+   top: 20px;
+   left: 10px;
+}
+
+.form-right-decoration:before {
+   top: -20px;
+   right: 0;
+}
+
+.form-right-decoration:after {
+   top: 20px;
+   right: 10px;
+}
+
+.circle {
+   position: absolute;
+   bottom: 80px;
+   left: -55px;
+   width: 20px;
+   height: 20px;
+   border-radius: 50%;
+   background: white;
+}
+
+.form-inner {
+   padding: 30px 50px;
+   text-transform: uppercase;
+}
+
+.form-inner input {
+   display: block;
+   width: 100%;
+   padding: 0 20px;
+   margin-bottom: 20px;
+   background: #f3edf1;
+   line-height: 40px;
+   border-width: 0;
+   border-radius: 20px;
+   font-family: 'Bitter', sans-serif;
+}
+
+.form-inner input[type="submit"] {
+   margin-top: 40px;
+   background: #6b4557;
+   border-bottom: 4px solid #513536;
+   color: white;
+   font-size: 14px;
+   text-transform: uppercase;
+}
+
+/* tabs */
+
+.tabs {
+   width: 100%;
+}
+
+/* Стили для списка вкладок */
+.tab-header {
+   list-style: none;
+   padding: 0;
+   display: flex;
+   align-items: center;
+   justify-content: flex-start;
+   margin: 0;
+}
+
+/* Стили для вкладки */
+.tab-header__item {
+   padding: 0 20px 0;
+   height: 60px;
+   line-height: 60px;
+   cursor: pointer;
+   width: 50%;
+   text-align: center;
+   color: #6b4557;
+   text-transform: uppercase;
+}
+
+/* Стили для активной вкладки */
+.tab-header__item.active {
+   border-radius: 50px 0 0 50px;
+   border-bottom: none;
+   position: relative;
+   background-color: #f3edf1;
+}
+
+/* Стиль для списка контейнеров с содержимым вкладок */
+.tab-content {
+   list-style: none;
+   padding: 0;
+   margin: 0;
+}
+
+/* Стили для контейнера с содержимым вкладки. По умолчанию скрыт. */
+.tab-content__item {
+   display: none;
+   padding: 0px 20px;
+   margin-top: -1px;
+}
+
+/* Стили для активного контейнера вкладки */
+.tab-content__item.active {
+   display: block;
+}
+
+form > label {
+   color: #bbb;
+   font-size: 13px;
+   padding: 20px;
+}
+
+form {
+   position: relative;
+}
+
+label {
+   position: absolute;
+}
+
+#username-error {
+   top: 16%;
+}
+
+#userEmail-error {
+   top: 34.6%;
+}
+
+#password-input-error {
+   top: 53%;
+}
+
+#login > #userName-error {
+   top: 20%;
+}
+
+#login > #password-input-login-error {
+   top: 43%;
+}
+
+/*vision*/
+
+.passeye {
+   position: absolute;
+   top: 48%;
+   left: 85%;
+}
+
+.passeyye {
+   position: absolute;
+   top: 36%;
+   left: 85%;
+}
+
+.password-control {
+   position: absolute;
+   display: inline-block;
+   width: 30px;
+   height: 30px;
+   background-image: url(../media/img/noeye.png);
+   background-size: cover;
+}
+.password-control.view {
+   background-image: url(../media/img/eye.png);
+   background-size: cover;
+}
+
+.password-control-login {
+   position: absolute;
+   display: inline-block;
+   width: 30px;
+   height: 30px;
+   background-image: url(../media/img/noeye.png);
+   background-size: cover;
+}
+.password-control-login.view {
+   background-image: url(../media/img/eye.png);
+   background-size: cover;
+}
